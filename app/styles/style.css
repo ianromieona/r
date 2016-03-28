@@ -30,28 +30,24 @@ body {
       left: 0;
       background: rgba(0, 0, 0, 0.5); }
       .list div.image-list-container div.img-hover ul {
-        width: 155px;
         height: 23px;
+        margin-top: 20px;
+        margin-left: 10px;
         padding-left: 0px;
-        list-style: none;
-        position: absolute;
-        margin: auto;
-        top: 50%;
-        bottom: 50%;
-        left: 0px;
-        right: 0px; }
+        list-style: none; }
         .list div.image-list-container div.img-hover ul li {
-          display: inline; }
+          display: inline;
+          margin-right: 10px; }
           .list div.image-list-container div.img-hover ul li a {
-            border: 2px solid #868686;
+            border: 1px solid #868686;
             border-radius: 2px;
             padding: 9px;
-            font-weight: 900;
-            font-size: 16px;
+            font-weight: 300;
+            font-size: 14px;
             text-decoration: none;
             color: #FFF; }
             .list div.image-list-container div.img-hover ul li a:hover {
-              border: 2px solid #FFF; }
+              border: 1px solid #FFF; }
               .list div.image-list-container div.img-hover ul li a:hover i.glyphicon-heart {
                 color: #CD1F25; }
               .list div.image-list-container div.img-hover ul li a:hover i.glyphicon-link {

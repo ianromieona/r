@@ -1,3 +1,4 @@
+'use strict';
 $(document).ready(function(){
   $('div.image-list-container').hover(
     function(){
