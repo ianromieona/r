@@ -8,13 +8,16 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/slider-pro/dist/css/slider-pro.css" />
+    <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css' />
+    <link rel='stylesheet' href='bower_components/slider-pro/dist/css/slider-pro.css' />
+    <link rel='stylesheet' href='bower_components/bootstrap-select/dist/css/bootstrap-select.css' />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,100italic,100' rel='stylesheet' type='text/css'>
     <!-- endbuild -->
   </head>
   <body ng-app="rApp">
@@ -45,22 +48,14 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </li>
+            <li class="signup-btn"><a href="#">Sign up</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
     <div class="banner">
         <div class="search-form">
+            <img src="images/logo.png" alt="">
             <ul>
                 <li>
                     <input type="text" placeholder="Search location..">
@@ -69,10 +64,274 @@
                     <button class="glyphicon glyphicon-search"></button>
                 </li>
             </ul>
+            <ul>
+                <li>
+                    <select class="selectpicker">
+                      <option>Property Type</option>
+                      <option>Mustard</option>
+                      <option>Ketchup</option>
+                      <option>Relish</option>
+                    </select>
+                </li>
+                <li>
+                    <select class="selectpicker">
+                      <option>Beds</option>
+                      <option>Mustard</option>
+                      <option>Ketchup</option>
+                      <option>Relish</option>
+                    </select>
+                </li>
+                <li>
+                    <select class="selectpicker">
+                      <option>Baths</option>
+                      <option>Mustard</option>
+                      <option>Ketchup</option>
+                      <option>Relish</option>
+                    </select>
+                </li>
+                <li>
+                    <select class="selectpicker">
+                      <option>Min Prize</option>
+                      <option>Mustard</option>
+                      <option>Ketchup</option>
+                      <option>Relish</option>
+                    </select>
+                </li>
+                <li>
+                    <select class="selectpicker">
+                      <option>Max Prize</option>
+                      <option>Mustard</option>
+                      <option>Ketchup</option>
+                      <option>Relish</option>
+                    </select>
+                </li>
+            </ul>
         </div>
     </div>
+    <div class="jumbotron j-index">
+      <h1>We are growing like anything</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
     <div class="container">
-    <div ng-view=""></div>
+        <h1>Featured Properties</h1>
+        <br>
+        <div class="row list">
+          <div class="col-md-4">
+            <div class="image-list-container">
+              <img src="images/test-img.jpg" alt="" />
+              <div class="img-hover">
+                <ul>
+                  <li><a href="#"><i class="glyphicon glyphicon-link"></i> View</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-heart"></i> Save</a></li>
+                </ul>
+              </div>
+              <p class="broker-cont"><img src="images/broker.png" class="broker_mini_img"> <b>Ian Romie Ona</b></p>
+            </div>
+            <h4 class='title-name'>Lorem Ipsum dolor</h4>
+            <small class="property-address"><i class="glyphicon glyphicon-map-marker"></i> Greenbelt Radissons, Makati City</small>
+            <br>
+            <p><label><i class="fa fa-car"></i> x2 </label><label><i class="fa fa-bed"></i> x2 </label><label><i class="fa fa-user"></i> x2 </label><small class="pull-right">P 21,000.00</small></p>
+
+          </div>
+          <div class="col-md-4">
+            <div class="image-list-container">
+              <img src="images/test-img.jpg" alt="" />
+              <div class="img-hover">
+                <ul>
+                  <li><a href="#"><i class="glyphicon glyphicon-link"></i> View</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-heart"></i> Save</a></li>
+                </ul>
+              </div>
+                <p class="broker-cont"><img src="images/broker.png" class="broker_mini_img"> <b>Ariel Moris</b></p>
+            </div>
+            <h4 class='title-name'>Lorem Ipsum dolor</h4>
+            <small class="property-address"><i class="glyphicon glyphicon-map-marker"></i> Greenbelt Radissons, Makati City</small>
+
+            <p><label><i class="fa fa-car"></i> x2 </label><label><i class="fa fa-bed"></i> x2 </label><label><i class="fa fa-user"></i> x2 </label><small class="pull-right">P 21,000.00</small></p>
+
+          </div>
+          <div class="col-md-4">
+            <div class="image-list-container">
+              <img src="images/test-img.jpg" alt="" />
+              <div class="img-hover">
+                <ul>
+                  <li><a href="#"><i class="glyphicon glyphicon-link"></i> View</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-heart"></i> Save</a></li>
+                </ul>
+              </div>
+                    <p class="broker-cont"><img src="images/broker.png" class="broker_mini_img"> <b>Edbert Guinto</b></p>
+            </div>
+            <h4 class='title-name'>Lorem Ipsum dolor</h4>
+            <small class="property-address"><i class="glyphicon glyphicon-map-marker"></i> Greenbelt Radissons, Makati City</small>
+
+            <p><label><i class="fa fa-car"></i> x2 </label><label><i class="fa fa-bed"></i> x2 </label><label><i class="fa fa-user"></i> x2 </label><small class="pull-right">P 21,000.00</small></p>
+
+          </div>
+        </div>
+        <div class="row list">
+          <div class="col-md-4">
+            <div class="image-list-container">
+              <img src="images/test-img.jpg" alt="" />
+              <div class="img-hover">
+                <ul>
+                  <li><a href="#"><i class="glyphicon glyphicon-link"></i> View</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-heart"></i> Save</a></li>
+                </ul>
+              </div>
+                    <p class="broker-cont"><img src="images/broker.png" class="broker_mini_img"> <b>Ian Romie Ona</b></p>
+            </div>
+            <h4 class='title-name'>Lorem Ipsum dolor</h4>
+            <small class="property-address"><i class="glyphicon glyphicon-map-marker"></i> Greenbelt Radissons, Makati City</small>
+
+            <p><label><i class="fa fa-car"></i> x2 </label><label><i class="fa fa-bed"></i> x2 </label><label><i class="fa fa-user"></i> x2 </label><small class="pull-right">P 21,000.00</small></p>
+
+          </div>
+          <div class="col-md-4">
+            <div class="image-list-container">
+              <img src="images/test-img.jpg" alt="" />
+              <div class="img-hover">
+                <ul>
+                  <li><a href="#"><i class="glyphicon glyphicon-link"></i> View</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-heart"></i> Save</a></li>
+                </ul>
+              </div>
+                    <p class="broker-cont"><img src="images/broker.png" class="broker_mini_img"> <b>Ian Romie Ona</b></p>
+            </div>
+            <h4 class='title-name'>Lorem Ipsum dolor</h4>
+            <small class="property-address"><i class="glyphicon glyphicon-map-marker"></i> Greenbelt Radissons, Makati City</small>
+
+            <p><label><i class="fa fa-car"></i> x2 </label><label><i class="fa fa-bed"></i> x2 </label><label><i class="fa fa-user"></i> x2 </label><small class="pull-right">P 21,000.00</small></p>
+
+          </div>
+          <div class="col-md-4">
+            <div class="image-list-container">
+              <img src="images/test-img.jpg" alt="" />
+              <div class="img-hover">
+                <ul>
+                  <li><a href="#"><i class="glyphicon glyphicon-link"></i> View</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-heart"></i> Save</a></li>
+                </ul>
+              </div>
+                    <p class="broker-cont"><img src="images/broker.png" class="broker_mini_img"> <b>Ian Romie Ona</b></p>
+            </div>
+            <h4 class='title-name'>Lorem Ipsum dolor</h4>
+            <small class="property-address"><i class="glyphicon glyphicon-map-marker"></i> Greenbelt Radissons, Makati City</small>
+
+            <p><label><i class="fa fa-car"></i> x2 </label><label><i class="fa fa-bed"></i> x2 </label><label><i class="fa fa-user"></i> x2 </label><small class="pull-right">P 21,000.00</small></p>
+
+          </div>
+        </div>
+        <br>
+        <h1>Latest Properties</h1>
+        <br>
+        <div class="row list">
+          <div class="col-md-4">
+            <div class="image-list-container">
+              <img src="images/test-img.jpg" alt="" />
+              <div class="img-hover">
+                <ul>
+                  <li><a href="#"><i class="glyphicon glyphicon-link"></i> View</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-heart"></i> Save</a></li>
+                </ul>
+              </div>
+                    <p class="broker-cont"><img src="images/broker.png" class="broker_mini_img"> <b>Ian Romie Ona</b></p>
+            </div>
+            <h4 class='title-name'>Lorem Ipsum dolor</h4>
+            <small class="property-address"><i class="glyphicon glyphicon-map-marker"></i> Greenbelt Radissons, Makati City</small>
+
+            <p><label><i class="fa fa-car"></i> x2 </label><label><i class="fa fa-bed"></i> x2 </label><label><i class="fa fa-user"></i> x2 </label><small class="pull-right">P 21,000.00</small></p>
+
+          </div>
+          <div class="col-md-4">
+            <div class="image-list-container">
+              <img src="images/test-img.jpg" alt="" />
+              <div class="img-hover">
+                <ul>
+                  <li><a href="#"><i class="glyphicon glyphicon-link"></i> View</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-heart"></i> Save</a></li>
+                </ul>
+              </div>
+                    <p class="broker-cont"><img src="images/broker.png" class="broker_mini_img"> <b>Ian Romie Ona</b></p>
+            </div>
+            <h4 class='title-name'>Lorem Ipsum dolor</h4>
+            <small class="property-address"><i class="glyphicon glyphicon-map-marker"></i> Greenbelt Radissons, Makati City</small>
+
+            <p><label><i class="fa fa-car"></i> x2 </label><label><i class="fa fa-bed"></i> x2 </label><label><i class="fa fa-user"></i> x2 </label><small class="pull-right">P 21,000.00</small></p>
+
+          </div>
+          <div class="col-md-4">
+            <div class="image-list-container">
+              <img src="images/test-img.jpg" alt="" />
+              <div class="img-hover">
+                <ul>
+                  <li><a href="#"><i class="glyphicon glyphicon-link"></i> View</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-heart"></i> Save</a></li>
+                </ul>
+              </div>
+                    <p class="broker-cont"><img src="images/broker.png" class="broker_mini_img"> <b>Ian Romie Ona</b></p>
+            </div>
+            <h4 class='title-name'>Lorem Ipsum dolor</h4>
+            <small class="property-address"><i class="glyphicon glyphicon-map-marker"></i> Greenbelt Radissons, Makati City</small>
+
+            <p><label><i class="fa fa-car"></i> x2 </label><label><i class="fa fa-bed"></i> x2 </label><label><i class="fa fa-user"></i> x2 </label><small class="pull-right">P 21,000.00</small></p>
+
+          </div>
+        </div>
+        <div class="row list">
+          <div class="col-md-4">
+            <div class="image-list-container">
+              <img src="images/test-img.jpg" alt="" />
+              <div class="img-hover">
+                <ul>
+                  <li><a href="#"><i class="glyphicon glyphicon-link"></i> View</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-heart"></i> Save</a></li>
+                </ul>
+              </div>
+                    <p class="broker-cont"><img src="images/broker.png" class="broker_mini_img"> <b>Ian Romie Ona</b></p>
+            </div>
+            <h4 class='title-name'>Lorem Ipsum dolor</h4>
+            <small class="property-address"><i class="glyphicon glyphicon-map-marker"></i> Greenbelt Radissons, Makati City</small>
+
+            <p><label><i class="fa fa-car"></i> x2 </label><label><i class="fa fa-bed"></i> x2 </label><label><i class="fa fa-user"></i> x2 </label><small class="pull-right">P 21,000.00</small></p>
+
+          </div>
+          <div class="col-md-4">
+            <div class="image-list-container">
+              <img src="images/test-img.jpg" alt="" />
+              <div class="img-hover">
+                <ul>
+                  <li><a href="#"><i class="glyphicon glyphicon-link"></i> View</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-heart"></i> Save</a></li>
+                </ul>
+              </div>
+                    <p class="broker-cont"><img src="images/broker.png" class="broker_mini_img"> <b>Ian Romie Ona</b></p>
+            </div>
+            <h4 class='title-name'>Lorem Ipsum dolor</h4>
+            <small class="property-address"><i class="glyphicon glyphicon-map-marker"></i> Greenbelt Radissons, Makati City</small>
+
+            <p><label><i class="fa fa-car"></i> x2 </label><label><i class="fa fa-bed"></i> x2 </label><label><i class="fa fa-user"></i> x2 </label><small class="pull-right">P 21,000.00</small></p>
+
+          </div>
+          <div class="col-md-4">
+            <div class="image-list-container">
+              <img src="images/test-img.jpg" alt="" />
+              <div class="img-hover">
+                <ul>
+                  <li><a href="#"><i class="glyphicon glyphicon-link"></i> View</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-heart"></i> Save</a></li>
+                </ul>
+              </div>
+                    <p class="broker-cont"><img src="images/broker.png" class="broker_mini_img"> <b>Ian Romie Ona</b></p>
+            </div>
+            <h4 class='title-name'>Lorem Ipsum dolor</h4>
+            <small class="property-address"><i class="glyphicon glyphicon-map-marker"></i> Greenbelt Radissons, Makati City</small>
+
+            <p><img src="images/broker.png" class="broker_mini_img"> <b>Ian Romie Ona</b><small class="pull-right">P 21,000.00</small></p>
+
+          </div>
+        </div>
+
+    <!-- <div ng-view=""></div> -->
     </div>
 
     <div class="footer">
@@ -94,7 +353,6 @@
     </script> -->
 
     <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
@@ -105,6 +363,7 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/slider-pro/dist/js/jquery.sliderPro.js"></script>
+    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <script type="text/javascript">
@@ -114,6 +373,7 @@
     </script>
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/style.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <!-- endbuild -->
