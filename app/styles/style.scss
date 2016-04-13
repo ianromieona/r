@@ -1,3 +1,5 @@
+$yellowcolor : #FFDD15;
+
 @font-face {
     font-family: Debby;
     src: url(fonts/Debby.ttf);
@@ -12,7 +14,7 @@ body {
 .banner {
     background: url(../images/banner.jpg) no-repeat;
     background-size: 100%;
-    height: 550px;
+    height: 650px;
     width: 100%;
     position: relative;
     margin-top: -70px;
@@ -82,6 +84,7 @@ body {
             border: none;
             outline: none;
             margin-top: -1px;
+            color: $yellowcolor;
             background-color: rgba(255,255,255,0.4);
         }
         button.dropdown-toggle {
@@ -119,14 +122,15 @@ body {
   h4.title-name {
     margin-top: 15px;
     margin-bottom: 0px;
-    font-weight: 900;
+    font-weight: 500;
   }
   .property-address {
     margin-left: -2px;
     margin-bottom: 20px;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
     color: #8E8E8E;
+    letter-spacing: 0.4px;
   }
   p:not(.broker-cont) {
     font-weight: 300;
@@ -154,7 +158,10 @@ body {
     .broker-cont{
         position: absolute;
         bottom: 0;
-        left: 10px;
+        left: 0px;
+        width: 100%;
+        padding: 5px;
+        background: rgba(0,0,0,0.6);
         img{
             width: 50px !important;
             border-radius: 100%;
@@ -232,4 +239,31 @@ body {
 
 .btn {
     border-radius:3px !important;
+}
+#my-slider{
+    width: 100% !important;
+    .sp-mask{
+        width: 100% !important;
+    }
+}
+.property-details {
+    h3 {
+        color: #4E4E4E;
+        font-size: 20px;
+    }
+    .property-amenities {
+        padding-left: 0px;
+        list-style: none;
+        li {
+            border-bottom: 1px solid #EEEEEE;
+            padding:8px;
+            color: #8E8E8E;
+            b{
+                color: #484848;
+                font-weight: 500;
+                margin-right: 5px;
+                margin-left: 10px;
+            }
+        }
+    }
 }
