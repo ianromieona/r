@@ -198,20 +198,54 @@ body {
   #my-slider .sp-mask {
     width: 100% !important; }
 
-.property-details h3 {
-  color: #4E4E4E;
-  font-size: 20px; }
-.property-details .property-amenities {
-  padding-left: 0px;
-  list-style: none; }
-  .property-details .property-amenities li {
-    border-bottom: 1px solid #EEEEEE;
-    padding: 8px;
-    color: #8E8E8E; }
-    .property-details .property-amenities li b {
+.property-details {
+  color: #484848; }
+  .property-details h3 {
+    color: #4E4E4E;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 600; }
+  .property-details .property-amenities {
+    padding-left: 0px;
+    list-style: none; }
+    .property-details .property-amenities li {
+      font-size: 15px;
+      padding: 8px;
+      color: #8E8E8E; }
+      .property-details .property-amenities li b {
+        color: #484848;
+        font-weight: 500;
+        margin-right: 5px;
+        margin-left: 10px; }
+      .property-details .property-amenities li:not(:last-child) {
+        border-bottom: 1px solid #EEEEEE; }
+
+.property-details-nav {
+  margin-bottom: 50px;
+  background: #F1F1F1; }
+  .property-details-nav ul {
+    width: 100%;
+    text-align: center; }
+    .property-details-nav ul li {
+      height: 65px;
+      display: inline-block;
+      *display: inline;
+      /*IE7*/
+      *zoom: 1;
+      /*IE7*/
+      width: 202px;
       color: #484848;
-      font-weight: 500;
-      margin-right: 5px;
-      margin-left: 10px; }
+      margin-right: 10px;
+      padding: 20px;
+      font-size: 16px; }
+      .property-details-nav ul li:not(:first-child) {
+        border-left: 1px solid #CCCCCC; }
+
+#map {
+  height: 400px;
+  width: 100%; }
+
+button.btn-p {
+  background: #FFDD15; }
 
 /*# sourceMappingURL=style.css.map */
