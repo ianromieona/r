@@ -88,6 +88,33 @@ body {
   .navbar ul li a {
     color: #FFF !important;
     font-weight: 900; }
+  .navbar ul li.brd {
+    border: 1px solid #353535; }
+  .navbar.n-index ul li a {
+    color: #353535 !important;
+    font-weight: 300;
+    font-size: 20px; }
+  .navbar.n-index ul li.brd {
+    border: 1px solid #353535; }
+  .navbar.n-index ul li input[type="text"] {
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #ABABAB;
+    box-shadow: none;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 300; }
+  .navbar.n-index ul li button {
+    margin-top: 5px;
+    margin-left: 3px;
+    border-radius: 3px;
+    border: 1px solid #ABABAB;
+    box-shadow: none;
+    padding: 9px;
+    font-size: 16px;
+    font-weight: 300; }
+  .navbar.n-index ul li.w300 {
+    width: 300px; }
 
 .list-title {
   font-size: 24px;
@@ -195,11 +222,45 @@ body {
 
 #my-slider {
   width: 100% !important; }
+  #my-slider .gra {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: 0px;
+    z-index: 2;
+    /* IE10+ */
+    background-image: -ms-linear-gradient(top, transparent 40%, #000000 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, transparent 40%, #000000 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(top, transparent 40%, #000000 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40, transparent), color-stop(100, #000000));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, transparent 40%, #000000 100%);
+    /* W3C Markup */
+    background-image: linear-gradient(to bottom, transparent 40%, #000000 100%); }
+    #my-slider .gra .info {
+      margin-top: 470px;
+      bottom: 100px;
+      left: 90px; }
+      #my-slider .gra .info h1 {
+        font-weight: 900;
+        color: white;
+        font-size: 55px; }
+      #my-slider .gra .info small {
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #8E8E8E;
+        font-size: 18px;
+        letter-spacing: 0.3px; }
   #my-slider .sp-mask {
     width: 100% !important; }
 
 .property-details {
-  color: #484848; }
+  color: #6D6D6D; }
   .property-details h3 {
     color: #4E4E4E;
     font-size: 20px;
@@ -219,6 +280,9 @@ body {
         margin-left: 10px; }
       .property-details .property-amenities li:not(:last-child) {
         border-bottom: 1px solid #EEEEEE; }
+  .property-details p {
+    font-size: 15px;
+    letter-spacing: 0.2px; }
 
 .property-details-nav {
   margin-bottom: 50px;
@@ -227,6 +291,7 @@ body {
     width: 100%;
     text-align: center; }
     .property-details-nav ul li {
+      letter-spacing: 0.3px;
       height: 65px;
       display: inline-block;
       *display: inline;
